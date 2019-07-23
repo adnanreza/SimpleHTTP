@@ -1,2 +1,2 @@
 # SimpleHTTP
-Used ES6 promises and arrow functions to implement HTTP library to make GET, POST, PUT and DELETE requests.
+Used ES7 async/await to implement HTTP library to make GET, POST, PUT and DELETE requests.
