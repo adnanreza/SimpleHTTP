@@ -25,7 +25,7 @@ const data = {
 //   .then(data => console.log(data))
 //   .catch(err => console.log(err));
 
-//Update user
+// //Delete user
 httpR
   .delete("https://jsonplaceholder.typicode.com/users/2")
   .then(data => console.log(data))
