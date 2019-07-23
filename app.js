@@ -1,1 +1,10 @@
-console.log(2);
+const http = new simpleHTTP();
+
+//Get posts
+http.get("https://jsonplaceholder.typicode.com/posts", function(err, posts) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(posts);
+  }
+});
