@@ -44,3 +44,17 @@ simpleHTTP.prototype.put = function(url, data, callback) {
 };
 
 // Make an HTTP DELETE Request
+simpleHTTP.prototype.delete = function(url, callback) {
+  this.http.open("DELETE", url, true);
+
+  let self = this; // use self so that callback function's this is same
+  this.http.onload = function() {
+    if (self.http.status === 200) {
+      callback(null, "Post Deleted");
+    } else {
+      callback("Error: " + self.http.status);
+    }
+  };
+
+  this.http.send();
+};
